@@ -86,7 +86,7 @@ export default {
   },
   methods: {
     onlyNum(e) {
-      e.target.value = e.target.value.replace(/[^\d]/g, "");
+      this.cardCvv = this.cardCvv.replace(/[^\d]/g, "");
     },
     inputValidate(name) {
       if (name === "cardNumber") {
